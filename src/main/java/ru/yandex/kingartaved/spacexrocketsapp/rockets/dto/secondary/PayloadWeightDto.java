@@ -3,7 +3,7 @@ package ru.yandex.kingartaved.spacexrocketsapp.rockets.dto.secondary;
 /**
  * Масса полезной нагрузки
  */
-public class PayloadWeight {
+public class PayloadWeightDto {
 
     String id;
     String name;

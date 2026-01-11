@@ -19,14 +19,14 @@ public class RocketDto {
     @JsonProperty("first_flight")
     LocalDate firstFlight;
 
-    Dimension height;
-    Dimension diameter;
-    Mass mass;
-    List<PayloadWeight> payloadWeights;
-    FirstStage firstStage;
+    DimensionDto height;
+    DimensionDto diameter;
+    MassDto massDto;
+    List<PayloadWeightDto> payloadWeightDtos;
+    FirstStageDto firstStageDto;
     SecondStageDto secondStageDto;
-    Engine engine;
-    LandingLeg landingLeg;
+    EngineDto engineDto;
+    LandingLegDto landingLegDto;
     String wikipedia;
     String description;
     String rocketId;

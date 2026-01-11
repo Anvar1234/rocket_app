@@ -19,5 +19,5 @@ public class SecondStageDto {
     int burnTime;
     ThrustDto thrustDto;
     @JsonProperty("payloads")
-    Payload payload;
+    PayloadDto payloadDto;
 }

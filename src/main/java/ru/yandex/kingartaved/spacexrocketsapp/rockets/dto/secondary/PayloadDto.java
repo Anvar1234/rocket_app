@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Полезная нагрузка
  */
-public class Payload {
+public class PayloadDto {
     @JsonProperty("option_1")
     private String option1;
 
@@ -13,5 +13,5 @@ public class Payload {
     private String option2;
 
     @JsonProperty("composite_fairing")
-    private CompositeFairing fairing;
+    private CompositeFairingDto fairing;
 }

@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Engine {
+public class EngineDto {
     int number;
     String type;
     String version;

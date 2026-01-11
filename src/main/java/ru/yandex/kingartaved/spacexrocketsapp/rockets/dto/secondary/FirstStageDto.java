@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class FirstStage {
+public class FirstStageDto {
     boolean reusable; //многоразовый или нет
     int engine;
     @JsonProperty("fuel_amount_tons")

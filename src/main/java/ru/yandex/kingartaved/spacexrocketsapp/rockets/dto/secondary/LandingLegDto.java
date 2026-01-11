@@ -5,14 +5,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
+/**
+ * Характеристики посадочных ножек
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Dimension {
+public class LandingLegDto {
+    @JsonProperty("number")
+    int number;
 
-    @JsonProperty("meters")
-    BigDecimal meter;
-    BigDecimal feet;
+    @JsonProperty("material")
+    String material;
 }
