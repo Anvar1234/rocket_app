@@ -1,6 +1,7 @@
-package ru.yandex.kingartaved.spacexrocketsapp.rockets.dto.secondary;
+package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.Min;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,9 +13,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LandingLegDto {
+    @Min(0)
     @JsonProperty("number")
     int number;
 
     @JsonProperty("material")
-    String material;
+    String material; //может быть null
 }

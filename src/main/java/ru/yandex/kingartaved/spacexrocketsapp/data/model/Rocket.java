@@ -1,6 +1,6 @@
-package ru.yandex.kingartaved.spacexrocketsapp.rockets.data.model;
+package ru.yandex.kingartaved.spacexrocketsapp.data.model;
 
-import ru.yandex.kingartaved.spacexrocketsapp.rockets.dto.secondary.*;
+import ru.yandex.kingartaved.spacexrocketsapp.dto.secondary.*;
 
 import java.time.LocalDate;
 import java.util.List;
