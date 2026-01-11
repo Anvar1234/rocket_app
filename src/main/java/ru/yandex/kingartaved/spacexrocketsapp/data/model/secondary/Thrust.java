@@ -1,27 +1,20 @@
-package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
+package ru.yandex.kingartaved.spacexrocketsapp.data.model.secondary;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 
 /**
  * Тяга на уровне моря
  */
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ThrustDto {
-    @NotNull
-    @JsonProperty("kN")
+public class Thrust {
     private BigDecimal kN;
-
-    @NotNull
-    @JsonProperty("lbf")
     private BigDecimal lbf;
 }

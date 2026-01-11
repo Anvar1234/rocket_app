@@ -3,18 +3,17 @@ package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 /**
  * Описание второй ступени
  */
-@Data
-@AllArgsConstructor
+@Setter
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class SecondStageDto {
     @Min(1)
     @JsonProperty("engines")

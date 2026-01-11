@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.yandex.kingartaved.spacexrocketsapp.dto.RocketDto;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 @RequestMapping("api/v1/rockets")
@@ -19,7 +20,7 @@ public class RocketController {
 
     @PostMapping()
     public ResponseEntity<String> createListOfRockets(
-            @RequestBody @Valid RocketDto rocketsToCreateDto
+            @RequestBody @Valid List<RocketDto> rocketsToCreateDto
     ) {
         logger.info("Вызван метод: createListOfRockets()");
         return ResponseEntity.status(HttpStatus.CREATED) //201

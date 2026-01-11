@@ -1,34 +1,24 @@
-package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
+package ru.yandex.kingartaved.spacexrocketsapp.data.model.secondary;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 
 /**
  * Масса полезной нагрузки
  */
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PayloadWeightDto {
-    @NotEmpty
+public class PayloadWeight {
     String id;
-
-    @NotEmpty
     String name;
-
-    @Min(1)
     int kg;
-
-    @NotNull
-    @DecimalMin("2.2")
     BigDecimal lb;
 }

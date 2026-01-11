@@ -1,15 +1,14 @@
 package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
-@Data
-@AllArgsConstructor
+@Setter
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class DimensionDto {
     @JsonProperty("meters")
     BigDecimal meter;

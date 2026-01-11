@@ -1,27 +1,19 @@
-package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
+package ru.yandex.kingartaved.spacexrocketsapp.data.model.secondary;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 /**
  * Полезная нагрузка
  */
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PayloadDto {
-    @NotEmpty
-    @JsonProperty("option_1")
+public class Payload {
     private String option1;
-
-    @JsonProperty("option_2")
     private String option2; //может быть пустым
-
-    @JsonProperty("composite_fairing")
-    private CompositeFairingDto fairing;
+    private CompositeFairing fairing;
 }

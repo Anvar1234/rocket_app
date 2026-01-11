@@ -1,21 +1,18 @@
-package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
+package ru.yandex.kingartaved.spacexrocketsapp.data.model.secondary;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Min;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Характеристики посадочных ножек
  */
-@Setter
-@Getter
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
-public class LandingLegDto {
-    @Min(0)
-    @JsonProperty("number")
+@NoArgsConstructor
+public class LandingLeg {
     int number;
-
-    @JsonProperty("material")
     String material; //может быть null
 }
