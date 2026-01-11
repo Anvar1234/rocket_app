@@ -6,8 +6,8 @@ import ru.yandex.kingartaved.spacexrocketsapp.data.model.secondary.Thrust;
 import ru.yandex.kingartaved.spacexrocketsapp.dto.secondary.ThrustDto;
 
 @Mapper(
-        componentModel = "spring",
-        unmappedTargetPolicy = ReportingPolicy.IGNORE
+        unmappedTargetPolicy = ReportingPolicy.IGNORE,
+        componentModel = "spring"
 )
 public interface ThrustMapper {
     Thrust toThrust(ThrustDto thrustDto);

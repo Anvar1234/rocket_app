@@ -26,7 +26,7 @@ public class RocketController {
             @RequestBody @Valid List<RocketDto> rocketsToCreateDto
     ) {
         logger.info("Вызван метод на контроллере: createListOfRockets()");
-        return ResponseEntity.status(HttpStatus.CREATED) //201
+        return ResponseEntity.status(HttpStatus.OK) //200
                 .body(rocketService.createListOfRockets(rocketsToCreateDto));
     }
 }
