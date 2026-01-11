@@ -1,6 +1,5 @@
 package ru.yandex.kingartaved.spacexrocketsapp.controller;
 
-
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,8 +14,8 @@ import ru.yandex.kingartaved.spacexrocketsapp.service.RocketService;
 import java.util.List;
 import java.util.logging.Logger;
 
-@RequestMapping("api/v1/rockets")
 @RestController
+@RequestMapping("api/v1/rockets")
 @RequiredArgsConstructor
 public class RocketController {
     private static final Logger logger = Logger.getLogger(RocketController.class.getName());
