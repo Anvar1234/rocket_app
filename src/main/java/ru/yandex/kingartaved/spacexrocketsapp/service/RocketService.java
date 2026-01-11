@@ -16,8 +16,11 @@ public class RocketService {
     private  final RocketMapper rocketMapper;
 
     public String createListOfRockets(List<RocketDto> rocketsToCreateDto){
+        logger.info("Вызван метод на сервисе: createListOfRockets()");
+        StringBuilder result = new StringBuilder();
         for (RocketDto rocketDto : rocketsToCreateDto) {
-            rocketMapper.toDomain(rocketDto);
+            result.append(rocketMapper.toDomain(rocketDto)).append("\n");
         }
+        return result.toString();
     }
 }

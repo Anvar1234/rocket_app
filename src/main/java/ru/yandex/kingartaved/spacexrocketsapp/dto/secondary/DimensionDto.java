@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 public class DimensionDto {
     @JsonProperty("meters")
     BigDecimal meter;
+
     @JsonProperty("feet")
     BigDecimal feet;
 }
