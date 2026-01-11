@@ -24,7 +24,7 @@ public class Engine {
     Integer engineLossMax; //максимальная потеря мощности двигателя, может быть null
     String propellant1; //топливо
     String propellant2;
-    Thrust thrustSeaLevelDto;
-    Thrust thrustVacuumDto;
+    Thrust thrustSeaLevel;
+    Thrust thrustVacuum;
     BigDecimal thrustToWeight; //может быть null
 }

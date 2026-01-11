@@ -9,7 +9,8 @@ import ru.yandex.kingartaved.spacexrocketsapp.dto.RocketDto;
 
 @Mapper(
         unmappedTargetPolicy = ReportingPolicy.IGNORE,
-        componentModel = "spring"
+        componentModel = "spring",
+        uses = {ThrustMapper.class}
 )
 public interface RocketMapper {
 

@@ -7,6 +7,7 @@ import ru.yandex.kingartaved.spacexrocketsapp.dto.secondary.*;
 import java.time.LocalDate;
 import java.util.List;
 
+@ToString
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,12 +23,12 @@ public class Rocket {
     String company;
     Dimension height;
     Dimension diameter;
-    Mass massDto;
+    Mass mass;
     List<PayloadWeight> payloadWeights;
-    FirstStage firstStageDto;
-    SecondStage secondStageDto;
-    Engine engineDto;
-    LandingLeg landingLegDto;
+    FirstStage firstStage;
+    SecondStage secondStage;
+    Engine engine;
+    LandingLeg landingLeg;
     String wikipedia;
     String description;
     String rocketId;

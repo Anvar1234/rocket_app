@@ -1,5 +1,6 @@
 package ru.yandex.kingartaved.spacexrocketsapp.dto.secondary;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
@@ -20,15 +21,19 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class PayloadWeightDto {
     @NotEmpty
+    @JsonProperty("id")
     String id;
 
     @NotEmpty
+    @JsonProperty("name")
     String name;
 
     @Min(1)
+    @JsonProperty("kg")
     int kg;
 
     @NotNull
     @DecimalMin("2.2")
+    @JsonProperty("lb")
     BigDecimal lb;
 }

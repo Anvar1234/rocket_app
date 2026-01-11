@@ -50,27 +50,27 @@ public class RocketDto {
 
     @NotNull
     @JsonProperty("mass")
-    MassDto massDto;
+    MassDto mass;
 
     @NotNull
     @JsonProperty("payload_weights")
-    List<PayloadWeightDto> payloadWeightDtos;
+    List<PayloadWeightDto> payloadWeights;
 
     @NotNull
     @JsonProperty("first_stage")
-    FirstStageDto firstStageDto;
+    FirstStageDto firstStage;
 
     @NotNull
     @JsonProperty("second_stage")
-    SecondStageDto secondStageDto;
+    SecondStageDto secondStage;
 
     @NotNull
     @JsonProperty("engines")
-    EngineDto engineDto;
+    EngineDto engine;
 
     @NotNull
     @JsonProperty("landing_legs")
-    LandingLegDto landingLegDto;
+    LandingLegDto landingLeg;
 
     String wikipedia;
     String description;

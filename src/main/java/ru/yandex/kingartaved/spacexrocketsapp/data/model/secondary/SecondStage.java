@@ -19,6 +19,6 @@ public class SecondStage {
     int countOfEngines;
     BigDecimal fuelAmount;
     int burnTime;
-    Thrust thrustDto;
-    Payload payloadDto;
+    Thrust thrust;
+    Payload payload;
 }

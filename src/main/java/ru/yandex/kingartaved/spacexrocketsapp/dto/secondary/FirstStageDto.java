@@ -34,9 +34,9 @@ public class FirstStageDto {
 
     @NotNull
     @JsonProperty("thrust_sea_level")
-    ThrustDto thrustDtoSeaLevel;
+    ThrustDto thrustSeaLevel;
 
     @NotNull
     @JsonProperty("thrust_vacuum")
-    ThrustDto thrustDtoVacuum;
+    ThrustDto thrustVacuum;
 }

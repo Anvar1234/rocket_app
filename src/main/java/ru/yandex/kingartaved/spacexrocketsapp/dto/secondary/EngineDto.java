@@ -40,11 +40,11 @@ public class EngineDto {
 
     @NotNull
     @JsonProperty("thrust_sea_level")
-    ThrustDto thrustSeaLevelDto;
+    ThrustDto thrustSeaLevel;
 
     @NotNull
     @JsonProperty("thrust_vacuum")
-    ThrustDto thrustVacuumDto;
+    ThrustDto thrustVacuum;
 
     @JsonProperty("thrust_to_weight")
     BigDecimal thrustToWeight; //может быть null

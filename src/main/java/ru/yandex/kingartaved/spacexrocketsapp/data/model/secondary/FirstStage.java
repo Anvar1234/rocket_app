@@ -21,6 +21,6 @@ public class FirstStage {
     BigDecimal fuelAmount;
     Long core; //может быть null
     int burnTime;
-    Thrust thrustDtoSeaLevel;
-    Thrust thrustDtoVacuum;
+    Thrust thrustSeaLevel;
+    Thrust thrustVacuum;
 }
